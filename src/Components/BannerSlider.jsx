@@ -18,7 +18,7 @@ const BannerSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-40 md:h-screen overflow-hidden">
       {images.map((image, index) => (
         <div
           key={index}
@@ -29,7 +29,7 @@ const BannerSlider = () => {
           <img
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover p-2"
+            className="w-72 mx-auto md:w-full md:h-full object-cover p-2"
           />
         </div>
       ))}
