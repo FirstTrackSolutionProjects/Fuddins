@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        myGreen:'#9ad554',
+        beige:'#efe9df',
+      },
+      fontFamily: { 
+        "poppins":['Poppins','Montserrat'],
+        "domine":['Domine','Inter'],
+    },
+    },
   },
   plugins: [],
 }
