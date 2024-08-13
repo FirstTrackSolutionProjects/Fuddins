@@ -93,7 +93,7 @@ const Header=()=>{
       <div>
         {/*Md screen header*/}
         <div className={`hidden md:flex items-center px-8 font-poppins z-10 ${bgColor}`}>
-            <div><img src='images/logo.jpg' alt='no image' className='w-40 h-24 p-3'></img></div>
+        <Link to="/"><div><img src='images/logo.jpg' alt='no image' className='w-40 h-24 p-3'></img></div></Link>
             <nav className='w-full flex justify-between'>
                 <div className='flex px-5 gap-8 text-black items-center'>
                     
@@ -145,68 +145,72 @@ const Header=()=>{
                         </div>
                         )}
                     </div>
-                    <div className='text-black p-1 items-center'><ShoppingCartIcon className='h-9 w-10 border-2 border-myGreen p-1 text-myGreen'/></div>
+                    <div className='text-black p-1 items-center'><ShoppingCartIcon className='h-9 w-10 border-2 border-myGreen p-1 text-myGreen hover:bg-myGreen hover:text-white'/></div>
                     <Link to="/login"><div className='text-myGreen'>Log In</div></Link>
                 </div>
             </nav>
         </div>
         {/*sm screen header*/}
         <header className="md:hidden flex justify-between items-center bg-white p-4">
-        <div><img src='images/logo.jpg' alt='no image' className='w-24 h-14'></img></div>
-        <button onClick={toggleMenu} className="text-myGreen text-2xl">
+        <Link to="/"><div><img src='images/logo.jpg' alt='no image' className='w-24 h-14'></img></div></Link>
+        <div className='flex gap-3'>
+        <div className='text-black p-1 items-center'><ShoppingCartIcon className='h-9 w-10 border-2 border-myGreen p-1 text-myGreen hover:bg-myGreen hover:text-white'/></div>
+        <button onClick={toggleMenu} className="text-myGreen  text-2xl">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
+        </div>
       </header>
 
       {/* Sidebar Menu for Below Medium Screens */}
       <div
-        className={`fixed top-0 left-0 w-64 bg-white text-myGreen text-xl font-poppins h-full z-50 transform ${
+        className={`fixed overflow-y-scroll h-full scrollbar-hide top-0 left-0 w-72 bg-white text-myGreen text-xl font-poppins  z-50 transform ${
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out`}
+        } transition-transform duration-300 ease-in-out `}
       >
+        
         <div className="p-4">
           <button onClick={toggleMenu} className="text-2xl">
-            <FaTimes />
+            <FaTimes className='text-black' />
           </button>
         </div>
         <nav className=''>
           <ul className="space-y-2">
-          <Link to="/login" onClick={closeMenu}><li className=" px-3 mb-2">Log In</li></Link>
-          <Link to="/" onClick={closeMenu}><li className=" px-3">Home</li></Link>
+          <Link to="/login" onClick={closeMenu}><li className=" px-3 mb-8">Log In</li></Link>
+          <Link to="/" onClick={closeMenu}><li className=" px-3 mb-8">Home</li></Link>
             <li>
             <div className='flex justify-between'><Link to="/allprod" onClick={closeMenu} ><button 
-                className="w-full text-left  flex justify-between  px-3">
+                className="w-full text-left  flex justify-between  px-3 mb-8">
                 All Products
                 </button></Link><div  className='mx-3'>{activeSubmenu === 1 ? <ChevronUpIcon onClick={() => toggleSubmenu(1)}  className='text-myGreen  h-5 w-5'/> : <ChevronDownIcon onClick={() => toggleSubmenu(1)} className='text-myGreen  h-5 w-5'/>}</div>
                 </div>
               {activeSubmenu === 1 && (
-                <ul className="space-y-2 mt-2 ">
-                  <li onClick={closeMenu} className="hover:bg-myGreen hover:text-white text-sm text-black mb-1 px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Food Items</li>
-                  <li onClick={closeMenu} className="hover:bg-myGreen hover:text-white text-sm text-black mb-2 px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Groceries</li>
+                <ul className="space-y-2 mb-5">
+                  <li onClick={closeMenu} className="hover:bg-myGreen hover:text-white  mb-6 px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Food Items</li>
+                  <li onClick={closeMenu} className="hover:bg-myGreen hover:text-white  mb-6 px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Groceries</li>
                 </ul>
               )} 
             </li>
-            <Link to="/login" onClick={closeMenu}><li className=" my-2  px-3">My Orders</li></Link>
-            <Link to="/login" onClick={closeMenu}><li className=" mb-2  px-3">Refer & Earn</li></Link>
+            <Link to="/login" onClick={closeMenu}><li className=" mb-8  px-3">My Orders</li></Link>
+            <Link to="/login" onClick={closeMenu}><li className=" mb-8  px-3">Refer & Earn</li></Link>
             <li>
             <div className='flex justify-between'><Link to="/partner" onClick={closeMenu} ><button 
-                className="w-full text-left  flex justify-between  px-3">
+                className="w-full text-left  flex justify-between  px-3 mb-8">
                 Partner
                 </button></Link><div  className='mx-3'>{activeSubmenu === 2 ? <ChevronUpIcon onClick={() => toggleSubmenu(2)}  className='text-myGreen  h-5 w-5'/> : <ChevronDownIcon onClick={() => toggleSubmenu(2)} className='text-myGreen  h-5 w-5'/>}</div>
                 </div>
               {activeSubmenu === 2 && (
-                <ul className="space-y-2 mt-2 ">
-                  <Link to="/shopcard" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Apply Shopping Cart</li></Link>
-                  <Link to="/exelog" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Executive Login</li></Link>
-                  <Link to="/menuUpl" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Menu Upload</li></Link>
-                  <Link to="/onboarding" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Onboarding Enquiry</li></Link>
+                <ul className="space-y-2">
+                  <Link to="/shopcard" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white mb-8  px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Apply Shopping Cart</li></Link>
+                  <Link to="/exelog" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white mb-8  px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Executive Login</li></Link>
+                  <Link to="/menuUpl" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white mb-8  px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Menu Upload</li></Link>
+                  <Link to="/onboarding" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white mb-8  px-3 flex items-center"><ChevronRightIcon className='w-4 h-4 mr-2'/>Onboarding Enquiry</li></Link>
                 </ul>
               )}
             </li>
 
             <li>
               <button onClick={() => toggleSubmenu(3)}
-                className="w-full text-left  flex justify-between  px-3"
+                className="w-full text-left  flex justify-between  px-3 mb-8"
                 
               >
                 About Us
@@ -214,9 +218,9 @@ const Header=()=>{
               </button>
               {activeSubmenu === 3 && (
                 <ul className="space-y-2 mt-2 ">
-                  <Link to="/about" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center mb-1"><ChevronRightIcon className='w-4 h-4 mr-2'/>About</li></Link>
-                  <Link to="/contact" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center mb-1"><ChevronRightIcon className='w-4 h-4 mr-2'/>Contact</li></Link>
-                  <Link to="/career" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-sm text-black px-3 flex items-center mb-1"><ChevronRightIcon className='w-4 h-4 mr-2'/>Career</li></Link>
+                  <Link to="/about" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white px-3 text-xl flex items-center mb-4 "><ChevronRightIcon className='w-4 h-4 mr-2'/>About</li></Link>
+                  <Link to="/contact" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-xl  px-3 flex items-center mb-4"><ChevronRightIcon className='w-4 h-4 mr-2'/>Contact</li></Link>
+                  <Link to="/career" onClick={closeMenu}><li className="hover:bg-myGreen hover:text-white text-xl  px-3 flex items-center mb-4"><ChevronRightIcon className='w-4 h-4 mr-2'/>Career</li></Link>
                 </ul>
               )}
             </li>

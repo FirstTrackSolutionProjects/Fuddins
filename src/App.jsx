@@ -19,7 +19,8 @@ import MenuUpload from './Pages/MenuUpload';
 import Onboarding from './Pages/Onboarding';
 import Partner from './Pages/Partner';
 import Home from './Pages/Home';
-import AllProducts from './Pages/AllProducts';
+import AllProducts from './Components/AllProducts';
+import ProductDetail from './Components/ProductDetail';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <Route path="/onboarding" element={<Onboarding/>}></Route>
       <Route path="/partner" element={<Partner/>}></Route>
       <Route path="/allprod" element={<AllProducts/>}></Route>
+      <Route path="/detail" element={<ProductDetail/>}></Route>
       </Routes>
       <Footer/>
     </div>

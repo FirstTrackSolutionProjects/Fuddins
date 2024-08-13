@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import TimelineProcess from "../Components/TimelineProcess";
 import TimelineProcess2 from "../Components/TimelineProcess2";
 import { Link } from "react-router-dom";
 
 const ExeLogin =()=>{
+    useEffect(() => {
+        document.title = "Vendor-Registration - Fuddins";
+    }, []);
     return(
         <div className="text-center">
             <div className="md:flex items-center gap-10 justify-center">
