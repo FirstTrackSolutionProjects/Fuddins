@@ -19,7 +19,7 @@ const ImageSlider = ({ images }) => {
     : [...images.slice(startIndex), ...images.slice(0, endIndex)];
 
   return (
-    <div className="flex overflow-hidden justify-center mb-5 mt-2">
+    <div className="flex overflow-hidden justify-center md:mb-5 md:mt-2">
       {displayedImages.map((image, i) => (
         <div
           key={i}

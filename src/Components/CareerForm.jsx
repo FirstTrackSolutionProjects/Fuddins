@@ -124,7 +124,7 @@ const CareerForm = () => {
               name="qualification"
               value={formData.qualification}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md focus:outline-none"
+              className="w-full text-sm md:text-base px-4 py-2 border rounded-md focus:outline-none"
             >
               <option value="">Select your qualification</option>
               <option value="tenth">10th</option>

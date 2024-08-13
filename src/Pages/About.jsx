@@ -97,13 +97,13 @@ const About =()=>{
                     <div className="text-center p-5 bg-white space-y-5">
                         <div><img src="images/mam.jpeg" className="mx-auto w-80 h-[340px] px-5 rounded-md"></img></div>
                         <div className="text-2xl font-domine font-bold">Ms. Toral Barbhaya</div>
-                        <div className="text-base font-poppins">Director</div>
+                        <div className="text-base font-poppins">Director | COO</div>
                         <div className="px-8 text-justify text-sm font-poppins text-gray-700">She is a director of the company. She drives the business initiatives, transportation the spirit of innovation and eventually guaranteeing the most effective quality of package solutions for patrons.</div>
                     </div>
                     <div className="text-center p-5 bg-white space-y-5">
                         <div><img src="images/cto.jpeg" className="mx-auto w-80 h-[340px] px-5 rounded-md"></img></div>
                         <div className="text-2xl font-domine font-bold">Mr. Debashish Mahapatro</div>
-                        <div className="text-base font-poppins">Founder | CTO</div>
+                        <div className="text-base font-poppins">CTO - Chief Technical Officer</div>
                         <div className="px-8 text-justify text-sm font-poppins text-gray-700">Technology professional, Debasish keeps up on the newest software tech-trends.He drives the technology initiatives, transferral the spirit of innovation and eventually guaranteeing the best quality of software.</div>
                     </div>
                 </div>

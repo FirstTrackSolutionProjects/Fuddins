@@ -5,6 +5,13 @@ const Career =()=>{
     useEffect(() => {
         document.title = "Career - Fuddins";
     }, []);
+    const recipientEmail = 'info@fuddins.com'; // Static recipient email address
+
+  const handleEmailClick = () => {
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipientEmail}`;
+  };
+
+    const whatsappUrl = `https://wa.me/9040170727?text=Hello, I would like to inquire about your services."`;
     return(
         <div>
             <div className=" w-full mx-auto z-0 font-inter">
@@ -24,9 +31,18 @@ const Career =()=>{
             </div>
             <div className="grid grid-cols-2 py-10 md:py-20">
                 <div className="text-center font-domine text-2xl md:text-4xl font-semibold">Contact Us</div>
-                <div className="flex gap-2 md:gap-3 mx-auto font-poppins">
-                    <div className="text-white bg-myGreen p-1 text-sm md:text-base md:px-5 md:py-2 text-center rounded-md">Email</div>
-                    <div className="text-white bg-myGreen p-1 text-sm md:text-base md:px-5 md:py-2 text-center rounded-md">Message Us</div>
+                <div className="flex gap-2 md:gap-6 mx-auto font-poppins">
+                    
+                    <button
+      onClick={handleEmailClick}
+      className="bg-myGreen text-white px-2 py-1 md:py-2 md:px-3 rounded text-center "
+    >
+      Email
+    </button>
+                    <a
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"  className="text-white items-center bg-myGreen px-2 md:px-4 py-1 md:py-2 text-center rounded">Message Us</a>
                 </div>
             </div>
         </div>

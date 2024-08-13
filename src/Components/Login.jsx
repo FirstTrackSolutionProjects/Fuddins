@@ -5,7 +5,6 @@ import 'tailwindcss/tailwind.css';
 
 const Login = () => {
   const [isEmailLogin, setIsEmailLogin] = useState(false);
-  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
@@ -17,6 +16,17 @@ const Login = () => {
       phone
     });
     alert('Logged in with mobile successfully!');
+  };
+
+  const [countryCode, setCountryCode] = useState('+91');
+  const [mobileNumber, setMobileNumber] = useState('');
+
+  const handleCountryCodeChange = (e) => {
+    setCountryCode(e.target.value);
+  };
+
+  const handleMobileNumberChange = (e) => {
+    setMobileNumber(e.target.value);
   };
 
   const handleEmailLogin = (e) => {
@@ -36,15 +46,27 @@ const Login = () => {
         <form onSubmit={handleMobileLogin} className="border border-gray-200 p-4 md:p-6 rounded-md">
           <div className="text-xl mb-6">Login with Mobile</div>
           <label className="block mb-2">Phone <span className='text-red-600 font-semibold'>*</span></label>
-          <div className="mb-4">
-            <PhoneInput
-              country={'us'}
-              value={phone}
-              onChange={setPhone}
-              inputClass="w-full"
-              buttonClass="bg-gray-200"
-            />
-          </div>
+          <div className='flex gap-1 my-2'>
+        <select 
+          value={countryCode} 
+          onChange={handleCountryCodeChange}
+          className="border text-sm border-gray-300  p-1 focus:outline-none"
+        >
+          <option value="+91">India (+91)</option>
+          <option value="+1">USA (+1)</option>
+          <option value="+44">UK (+44)</option>
+          <option value="+61">Australia (+61)</option>
+          {/* Add more country codes as needed */}
+        </select>
+      
+        <input 
+          type="tel" 
+          value={mobileNumber} 
+          onChange={handleMobileNumberChange}
+          placeholder="Enter mobile number"
+          className="border text-sm border-gray-300 p-1  w-full"
+        />
+      </div>
           <div className='flex gap-5'>
           <button
             type="submit"
