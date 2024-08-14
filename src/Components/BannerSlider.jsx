@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const images = [
   'images/banner3.jpg', // Replace with your image URLs
   'images/banner1.jpg',
-  'images/banner2.jpeg',
+  'images/1.png',
 ];
 
 const BannerSlider = () => {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import StarRating from "./StarRating";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import TabComp from "./TabComp";
+import Product from './Product';
 
 const ProductDetail =()=>{
     const [value, setValue] = useState(0);
@@ -64,6 +65,15 @@ const ProductDetail =()=>{
                 </div>
             </div>
             <div className="p-2">
+                <TabComp/>
+            </div>
+            <div>
+                <div className="text-2xl font-domine font-semibold py-5 text-center">Related Products</div>
+                <div className="grid grid-cols-2 md:grid-cols-4 space-x-1">
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                </div>
                 
             </div>
         </div>

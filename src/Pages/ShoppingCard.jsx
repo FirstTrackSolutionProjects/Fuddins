@@ -6,7 +6,7 @@ const ShoppingCard =()=>{
     return(
         <div className="bg-beige bg-opacity-30">
             <div className="p-2">
-            <img src="images/shoppingcard.jpeg" className="mx-auto"></img></div>
+            <img src="images/2.png" className="mx-auto py-5 px-14"></img></div>
             <div className="text-center pt-8 md:pt-16 md:pb-10">
                 <div className="text-3xl font-domine font-semibold">What Benefits For You</div>
                 <div className="text-lg text-gray-600">Save money with shopping cards and shop for more of the things you love</div>
