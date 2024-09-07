@@ -43,7 +43,7 @@ const TimelineProcess = () => {
               {stage.title}
               {index < stages.length - 1 && (
                 <div
-                  className={`absolute w-full md:mt-3 h-1 bg-myGreen top-5 transform transition-all duration-500 ${
+                  className={`absolute w-full md:mt-3 h-1 bg-lime-500 top-5 transform transition-all duration-500 ${
                     index < currentStage ? "scale-x-100" : "scale-x-0"
                   } origin-left`}
                 ></div>
@@ -97,7 +97,7 @@ const TimelineProcess = () => {
                 </button>
                 <button
                   type="submit"
-                  className="bg-myGreen text-sm md:text-base text-white md:px-4 px-2 md:py-2 py-1 rounded "
+                  className="bg-lime-500 text-sm md:text-base text-white md:px-4 px-2 md:py-2 py-1 rounded "
                 >
                   Register
                 </button>
@@ -110,7 +110,7 @@ const TimelineProcess = () => {
           <div>
             <button
               onClick={nextStage}
-              className="bg-myGreen text-sm md:text-base text-white px-4 py-2 rounded "
+              className="bg-lime-500 text-sm md:text-base text-white px-4 py-2 rounded "
             >
               Confirm Registration
             </button>
@@ -119,7 +119,7 @@ const TimelineProcess = () => {
 
         {currentStage === 3 && (
           <div>
-            <p className="text-myGreen font-bold text-lg">
+            <p className="text-lime-500 font-bold text-lg">
               {stages[currentStage].content}
             </p>
           </div>

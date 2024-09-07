@@ -69,7 +69,7 @@ const ReviewSection = () => {
       <div>
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          className="w-full py-2 px-4 bg-lime-500 text-white rounded-lg hover:bg-lime-500"
         >
           Submit
         </button>

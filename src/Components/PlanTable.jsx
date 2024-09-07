@@ -96,12 +96,12 @@ const PlanTable = () => {
           {/* Row 6 */}
           <tr className="text-center">
             <td className=" p-2"></td>
-            <td className="border border-gray-300 p-2 "><div className="bg-myGreen mx-auto text-white p-2 w-32">Choose Plan</div></td>
-            <td className="border border-gray-300 p-2"><div className="bg-myGreen mx-auto text-white p-2 w-32">Choose Plan</div></td>
-            <td className="border border-gray-300 p-2"><div className="bg-myGreen mx-auto text-white p-2 w-32">Choose Plan</div></td>
-            <td className="border border-gray-300 p-2"><div className="bg-myGreen mx-auto text-white p-2 w-32">Choose Plan</div></td>
-            <td className="border border-gray-300 p-2"><div className="bg-myGreen mx-auto text-white p-2 w-32">Choose Plan</div></td>
-            <td className="border border-gray-300 p-2"><div className="bg-myGreen mx-auto text-white p-2 w-32">Choose Plan</div></td>
+            <td className="border border-gray-300 p-2 "><div className="bg-lime-500 mx-auto text-white p-2 w-32">Choose Plan</div></td>
+            <td className="border border-gray-300 p-2"><div className="bg-lime-500 mx-auto text-white p-2 w-32">Choose Plan</div></td>
+            <td className="border border-gray-300 p-2"><div className="bg-lime-500 mx-auto text-white p-2 w-32">Choose Plan</div></td>
+            <td className="border border-gray-300 p-2"><div className="bg-lime-500 mx-auto text-white p-2 w-32">Choose Plan</div></td>
+            <td className="border border-gray-300 p-2"><div className="bg-lime-500 mx-auto text-white p-2 w-32">Choose Plan</div></td>
+            <td className="border border-gray-300 p-2"><div className="bg-lime-500 mx-auto text-white p-2 w-32">Choose Plan</div></td>
           </tr>
         </tbody>
       </table>

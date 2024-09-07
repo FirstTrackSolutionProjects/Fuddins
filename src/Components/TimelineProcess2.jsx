@@ -38,7 +38,7 @@ const TimelineProcess2=()=> {
               {stage}
               {index < stages.length + 1 && (
                 <div
-                  className={`absolute w-full mt-3 h-1 bg-myGreen top-5 transform transition-all duration-500 ${
+                  className={`absolute w-full mt-3 h-1 bg-lime-500 top-5 transform transition-all duration-500 ${
                     index < currentStage ? "scale-x-100" : "scale-x-0"
                   } origin-left`}
                 ></div>

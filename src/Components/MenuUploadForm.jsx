@@ -104,7 +104,7 @@ const MenuUploadForm = () => {
           <button
             type="button"
             onClick={handleUpload}
-            className="bg-myGreen text-white font-semibold px-6 py-3 rounded  focus:outline-none"
+            className="bg-lime-500 text-white font-semibold px-6 py-3 rounded  focus:outline-none"
           >
             Upload Menu
           </button>

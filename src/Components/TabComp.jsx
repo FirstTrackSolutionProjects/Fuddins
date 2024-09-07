@@ -16,11 +16,11 @@ const TabComp = () => {
       case 'location':
         return <div>Location details go here.</div>;
       case 'offers':
-        return <div>Offer details go here.</div>;
+        return <div>No more offers for this product!</div>;
         case 'store policies':
-            return <div>Offer details go here.</div>;
+            return <div>No store policies available at this time.</div>;
             case 'inquiries':
-                return <div>Offer details go here.</div>;
+                return <div><div className='font-domine font-semibold text-lg'>General Inquiries</div><div>No enquiries yet!</div></div>;
       default :
         return <div>
         <Addtionalinfo/>
@@ -35,13 +35,13 @@ const TabComp = () => {
           <div
             key={tab}
             className={`relative cursor-pointer md:pb-2 pb-1 pt-2 ${
-              activeTab === tab ? 'text-lime-600 text-base font-semibold' : 'text-gray-600 '
+              activeTab === tab ? 'text-lime-500 text-base font-semibold' : 'text-gray-600 '
             }`}
             onClick={() => setActiveTab(tab)}
           >
             {tab.charAt(0).toUpperCase() + tab.slice(1)}
             {activeTab === tab && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-lime-600 -mb-1"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-lime-500 -mb-1"></div>
             )}
           </div>
         ))}
