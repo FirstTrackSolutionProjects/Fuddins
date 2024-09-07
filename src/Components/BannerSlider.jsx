@@ -29,7 +29,7 @@ const BannerSlider = () => {
           <img
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-40 mx-auto md:w-full md:h-full object-cover  p-1 md:p-2"
+            className="w-full h-40 mx-auto md:w-full md:h-full object-contain  p-1 md:p-2"
           />
         </div>
       ))}

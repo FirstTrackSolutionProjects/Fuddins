@@ -21,7 +21,7 @@ const Product =()=>{
             <div><StarRating rating={4} /></div>
             </div>
         </div>*/}
-        <div className=" p-2 md:p-3  justify-center bg-slate-50 rounded-2xl font-poppins">
+        <div className=" p-1 md:p-3  justify-center bg-slate-50 rounded-2xl font-poppins">
             <div className="flex md:block items-center justify-between ">
             <div className="">
                 <img src="images/categories/grocery.jpg" className="w-32 p-1 md:w-52 mx-auto object-contain"></img>
@@ -29,7 +29,7 @@ const Product =()=>{
             <div>
             <div className="text-gray-600 text-xs md:text-sm mt-3">Category</div>
             <div className="mb-2 text-base md:text-lg">Product Name</div>
-            <div className="flex gap-8 md:gap-0 justify-between mb-3">
+            <div className="flex gap-6 md:gap-0 justify-between mb-3">
             <div className="text-sm md:text-lg">₹ 50.00</div>
                 <select id="quantity" className="mr-5 focus:outline-none text-center w-12 md:w-16 md:py-1 md:px-2 text-xs md:text-sm text-gray-900 rounded-full bg-lime-600 bg-opacity-10">
                     <option className="focus:outline-none hover:deoration-none hover:text-black hover:bg-lime-600 hover:bg-opacity-30">1 Kg</option>

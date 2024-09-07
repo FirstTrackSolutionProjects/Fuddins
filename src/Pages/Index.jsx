@@ -1,16 +1,13 @@
 import React,{useState} from "react";
 import SearchBar from "../Components/SearchBar";
 import ImageSlider from "../Components/ImageSlider";
-import ImageSlider2 from "../Components/ImageSlider2";
-import { sliderImg } from "../Constants/sliderImg";
 import { category } from "../Constants/sliderImg";
 import BannerSlider from "../Components/BannerSlider";
-import { BiCart } from "react-icons/bi";
 import { BsFillCartFill } from "react-icons/bs";
 import Product from "../Components/Product";
-import Categories from "../Components/Categories";
 import EachCategory from "../Components/EachCategory";
 import Newsletter from "../Components/NewsLetter";
+import TrustedPartner from "../Components/TrustedPartner";
 
 const Index =()=>{
     
@@ -70,10 +67,12 @@ const Index =()=>{
             <div>
               <EachCategory/>
             </div>
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <img src="images/banner.png" className=""></img>
               <Newsletter/>
+              
             </div>
-   
+            <TrustedPartner/>
         </div>
     )
 }
