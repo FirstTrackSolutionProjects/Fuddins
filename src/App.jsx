@@ -21,11 +21,14 @@ import Partner from './Pages/Partner';
 import Home from './Pages/Home';
 import AllProducts from './Components/AllProducts';
 import ProductDetail from './Components/ProductDetail';
+import Header2 from './Components/Header2';
+import Cart from './Components/Cart';
+import CheckOut from './Components/CheckOut';
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Header2/>
 
       <Routes>
       <Route path="/" element={<Home/>}></Route>
@@ -44,7 +47,9 @@ function App() {
       <Route path="/onboarding" element={<Onboarding/>}></Route>
       <Route path="/partner" element={<Partner/>}></Route>
       <Route path="/allprod" element={<AllProducts/>}></Route>
-      <Route path="/detail" element={<ProductDetail/>}></Route>
+      <Route path="/product-details" element={<ProductDetail/>}></Route>
+      <Route path="/cart" element={<Cart/>}></Route>
+      <Route path="/checkout" element={<CheckOut/>}></Route>
       </Routes>
       <Footer/>
     </div>

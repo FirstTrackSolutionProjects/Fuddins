@@ -3,6 +3,7 @@ import StarRating from "./StarRating";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import TabComp from "./TabComp";
 import Product from './Product';
+import { Link } from "react-router-dom";
 
 const ProductDetail =()=>{
     const [value, setValue] = useState(0);
@@ -39,7 +40,7 @@ const ProductDetail =()=>{
                         <div className="flex items-center space-x-5">
                             <input type="number" value={value} onChange={(e) => setValue(Number(e.target.value))} 
                                 className="w-16 p-1 text-center border border-gray-300 rounded-sm"/>
-                            <div className="bg-lime-500 text-white py-1 md:px-10 px-2 rounded-md text-lg font-poppins">ADD TO CART</div>
+                            <Link to="/cart"><div className="bg-lime-500 text-white py-1 md:px-10 px-2 rounded-md text-lg font-poppins">ADD TO CART</div></Link>
       
                         </div>
 
