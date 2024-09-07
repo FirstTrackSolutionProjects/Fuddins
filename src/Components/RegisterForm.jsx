@@ -78,7 +78,7 @@ const RegisterForm = () => {
           <button
             type="button"
             onClick={handleSendOtp}
-            className=" w-fit md:w-full p-1 my-3 md:my-0 bg-myGreen text-white rounded hover:bg-myGreen"
+            className=" w-fit md:w-full p-1 my-3 md:my-0 bg-lime-500 text-white rounded hover:bg-lime-500"
           >
             Send OTP
           </button>
@@ -96,7 +96,7 @@ const RegisterForm = () => {
             <button
               type="button"
               onClick={handleVerifyOtp}
-              className="mt-2 w-full bg-myGreen text-white py-2 rounded hover:bg-green-500"
+              className="mt-2 w-full bg-lime-500 text-white py-2 rounded hover:bg-green-500"
             >
               Verify OTP
             </button>
@@ -134,11 +134,11 @@ const RegisterForm = () => {
         </div>
         <div className='mb-5 font-poppins text-sm md:text-base'>
         Your personal data will be used to support your experience throughout this website, to manage access to your account,
-         and for other purposes described in our <span className='text-myGreen'> privacy policy.</span>
+         and for other purposes described in our <span className='text-lime-500'> privacy policy.</span>
         </div>
         <button
           type="submit"
-          className="w-fit px-3 font-semibold bg-myGreen text-white py-2 rounded hover:bg-myGreen"
+          className="w-fit px-3 font-semibold bg-lime-500 text-white py-2 rounded hover:bg-lime-500"
         >
           Register
         </button>

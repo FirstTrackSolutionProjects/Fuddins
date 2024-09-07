@@ -70,7 +70,7 @@ const Login = () => {
           <div className='flex gap-5'>
           <button
             type="submit"
-            className="w-full bg-myGreen text-white text-sm p-1  md:text-base md:py-2 rounded hover:bg-myGreen"
+            className="w-full bg-lime-500 text-white text-sm p-1  md:text-base md:py-2 rounded hover:bg-lime-500"
           >
             Login with Mobile
           </button>
@@ -121,7 +121,7 @@ const Login = () => {
           <div className='flex gap-5'>
           <button
             type="submit"
-            className="w-full bg-myGreen text-white text-sm p-2  md:text-base md:py-2 rounded hover:bg-myGreen"
+            className="w-full bg-lime-500 text-white text-sm p-2  md:text-base md:py-2 rounded hover:bg-lime-500"
           >
             Login with Email
           </button>

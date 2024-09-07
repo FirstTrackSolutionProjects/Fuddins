@@ -63,23 +63,23 @@ const About =()=>{
                     </div>
                     <div className="md:grid md:grid-cols-2 font-poppins text-sm md:text-base">
                         <div className="space-y-3">
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Ready Foods</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Fresh Fruits</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Groceries</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Fresh Vegetable</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Snacks</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Dairy</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Ready Foods</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Fresh Fruits</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Groceries</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Fresh Vegetable</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Snacks</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Dairy</div>
                         </div>
                         <div className="space-y-3 mt-2 md:mt-0">
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Beauty & Cosmetics</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Office Stationery</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Dessert & Bakery</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Pharma(First-Aid Items)</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Beverages</div>
-                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-myGreen"/>Mitha Paan</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Beauty & Cosmetics</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Office Stationery</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Dessert & Bakery</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Pharma(First-Aid Items)</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Beverages</div>
+                            <div className="flex items-center"><CheckCircleIcon className="h-5 w-6 text-lime-500"/>Mitha Paan</div>
                         </div>
                     </div>
-                    <div className="bg-myGreen my-5 rounded-md py-2 px-5 w-fit flex text-lg font-poppins text-white items-center">
+                    <div className="bg-lime-500 my-5 rounded-md py-2 px-5 w-fit flex text-lg font-poppins text-white items-center">
                         <ShoppingCartIcon className="w-5 h-5 mr-2 text-white"/>START SHOPPING
                     </div>
                 </div>

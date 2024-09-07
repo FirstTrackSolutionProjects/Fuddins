@@ -22,13 +22,13 @@ const Footer =()=>{
                 </div>
                 <div className="font-poppins items-center justify-center mx-auto px-5"> 
                     <div className="text-xl font-semibold my-3">Quick Links</div>
-                    <Link to="/about"><div className="my-2 text-white hover:text-myGreen " onClick={scrollToTop}>About Us</div></Link>
-                    <Link to="/contact"><div className="my-2 text-white hover:text-myGreen" onClick={scrollToTop}>Contact</div></Link>
-                    <Link to="/career"><div className="my-2 text-white hover:text-myGreen" onClick={scrollToTop}>Career</div></Link>
-                    <Link to="/canc"><div className="my-2 text-white hover:text-myGreen" onClick={scrollToTop}>Cancellation & Refund Policy</div></Link>
-                    <Link to="/shipp"><div className="my-2 text-white hover:text-myGreen" onClick={scrollToTop}>Shipping & Delivery Policy</div></Link>
-                    <Link to="/terms"><div className="my-2 text-white hover:text-myGreen" onClick={scrollToTop}>Terms & Conditions</div></Link>
-                    <Link to="/privacy"><div className="my-2 text-white hover:text-myGreen" onClick={scrollToTop}>Privacy & Policy</div></Link>
+                    <Link to="/about"><div className="my-2 text-white hover:text-lime-500 " onClick={scrollToTop}>About Us</div></Link>
+                    <Link to="/contact"><div className="my-2 text-white hover:text-lime-500" onClick={scrollToTop}>Contact</div></Link>
+                    <Link to="/career"><div className="my-2 text-white hover:text-lime-500" onClick={scrollToTop}>Career</div></Link>
+                    <Link to="/canc"><div className="my-2 text-white hover:text-lime-500" onClick={scrollToTop}>Cancellation & Refund Policy</div></Link>
+                    <Link to="/shipp"><div className="my-2 text-white hover:text-lime-500" onClick={scrollToTop}>Shipping & Delivery Policy</div></Link>
+                    <Link to="/terms"><div className="my-2 text-white hover:text-lime-500" onClick={scrollToTop}>Terms & Conditions</div></Link>
+                    <Link to="/privacy"><div className="my-2 text-white hover:text-lime-500" onClick={scrollToTop}>Privacy & Policy</div></Link>
                 </div>
                 <div className="p-5">
                     <div className="font-domine text-2xl">Download Our Mobile App</div>
@@ -50,19 +50,19 @@ const Footer =()=>{
                 <div className="text-base font-poppins">Copyright &copy; 2024 | fuddins.com</div>
                 <div className="flex gap-5">
                 <a href="https://www.facebook.com/people/Howdy-Fuddins/pfbid0qZpRFBz6SWPGk3TvSM5saqnPMbJeY3vagrAgESNj2JvANxyEyqHQnqGJvsb3nqal/" target="_blank" rel="noopener noreferrer" >
-                    <FaFacebook className="h-5 w-5 text-white hover:text-myGreen"/></a>
+                    <FaFacebook className="h-5 w-5 text-white hover:text-lime-500"/></a>
                     
                     <a href="https://x.com/Fuddins_com" target="_blank" rel="noopener noreferrer" >
-                    <FaTwitter className="h-5 w-5 text-white hover:text-myGreen"/></a>
+                    <FaTwitter className="h-5 w-5 text-white hover:text-lime-500"/></a>
 
                     <a href="https://www.instagram.com/fuddins_com/" target="_blank" rel="noopener noreferrer" >
-                    <FaInstagram className="h-5 w-5 text-white hover:text-myGreen"/></a>
+                    <FaInstagram className="h-5 w-5 text-white hover:text-lime-500"/></a>
 
                     <a href="https://www.linkedin.com/in/fuddins-com-833b48258/" target="_blank" rel="noopener noreferrer" >
-                    <FaLinkedin className="h-5 w-5 text-white hover:text-myGreen"/></a>
+                    <FaLinkedin className="h-5 w-5 text-white hover:text-lime-500"/></a>
 
                     <a href="https://www.youtube.com/channel/UCGtvFvTjNtHhpWtIW7Qi0vA" target="_blank" rel="noopener noreferrer" >
-                    <FaYoutube className="h-5 w-5 text-white hover:text-myGreen"/></a>
+                    <FaYoutube className="h-5 w-5 text-white hover:text-lime-500"/></a>
                 </div>
             </div>
             </div>

@@ -37,8 +37,8 @@ const Product =()=>{
             <Link onClick={scrollToTop} to="/product-details"><div className="mb-2 text-base md:text-lg">Product Name</div></Link>
             <div className="flex gap-6 md:gap-0 justify-between mb-3">
             <div className="text-sm md:text-lg">₹ 50.00</div>
-                <select id="quantity" className="mr-5 focus:outline-none text-center w-12 md:w-16 md:py-1 md:px-2 text-xs md:text-sm text-gray-900 rounded-full bg-lime-600 bg-opacity-10">
-                    <option className="focus:outline-none hover:deoration-none hover:text-black hover:bg-lime-600 hover:bg-opacity-30">1 Kg</option>
+                <select id="quantity" className="mr-5 focus:outline-none text-center w-12 md:w-16 md:py-1 md:px-2 text-xs md:text-sm text-gray-900 rounded-full bg-lime-500 bg-opacity-10">
+                    <option className="focus:outline-none hover:deoration-none hover:text-black hover:bg-lime-500 hover:bg-opacity-30">1 Kg</option>
                     <option>5 Kg</option>
                 </select>
                 
@@ -47,7 +47,7 @@ const Product =()=>{
             </div>
             <div className="hidden md:block text-xs text-center text-gray-500 mb-3"> Some product description</div>
             <div className="flex justify-between items-center">
-            <div className="text-center items-center py-1 md:mx-auto w-[70%] bg-lime-600 bg-opacity-30 rounded-md text-sm">ADD TO CART</div>
+            <div className="text-center items-center py-1 md:mx-auto w-[70%] hover:bg-opacity-50 bg-lime-500 bg-opacity-30 rounded-md text-sm">ADD TO CART</div>
             <HeartButton/>
             </div>
         </div>

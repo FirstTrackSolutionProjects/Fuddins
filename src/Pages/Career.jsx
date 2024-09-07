@@ -35,14 +35,14 @@ const Career =()=>{
                     
                     <button
       onClick={handleEmailClick}
-      className="bg-myGreen text-white px-2 py-1 md:py-2 md:px-3 rounded text-center "
+      className="bg-lime-500 text-white px-2 py-1 md:py-2 md:px-3 rounded text-center "
     >
       Email
     </button>
                     <a
       href={whatsappUrl}
       target="_blank"
-      rel="noopener noreferrer"  className="text-white items-center bg-myGreen px-2 md:px-4 py-1 md:py-2 text-center rounded">Message Us</a>
+      rel="noopener noreferrer"  className="text-white items-center bg-lime-500 px-2 md:px-4 py-1 md:py-2 text-center rounded">Message Us</a>
                 </div>
             </div>
         </div>

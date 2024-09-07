@@ -11,7 +11,7 @@ const SearchBar = ({ onSearch }) => {
       />
       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
         <svg 
-          className="h-5 w-5 text-myGreen" 
+          className="h-5 w-5 text-lime-500" 
           xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 20 20" 
           fill="currentColor">
