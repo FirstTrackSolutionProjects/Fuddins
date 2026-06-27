@@ -24,6 +24,8 @@ import ProductDetail from './Components/ProductDetail';
 import Header2 from './Components/Header2';
 import Cart from './Components/Cart';
 import CheckOut from './Components/CheckOut';
+import Bottomnav from "./Components/Bottomnav";
+import Chatbot from "./Components/Chatbot";
 
 function App() {
   return (
@@ -50,7 +52,11 @@ function App() {
       <Route path="/product-details" element={<ProductDetail/>}></Route>
       <Route path="/cart" element={<Cart/>}></Route>
       <Route path="/checkout" element={<CheckOut/>}></Route>
+
       </Routes>
+      <Chatbot/>
+      <Bottomnav/>
+      
       <Footer/>
     </div>
   );
